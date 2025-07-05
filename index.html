@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Charity: Water - Water Can Change Lives</title>
+  <link href="https://fonts.googleapis.com/css?family=Georgia:400,700|Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+      width: 100vw;
+    }
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;      /* Center horizontally */
+      text-align: center;       /* Center text */
+      padding: 0 5vw;
+      background: #000;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2.5rem;  /* Slightly more margin */
+    }
+    .logo-icon {
+      background: #FFD600;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.5rem;
+      border-radius: 4px;
+      padding: 0.2em 0.5em;
+      margin-right: 0.5em;
+      font-family: 'Georgia', serif;
+      letter-spacing: 1px;
+    }
+    .logo-text {
+      font-family: 'Georgia', serif;
+      font-size: 1.8rem;      /* Slightly bigger */
+      letter-spacing: 2px;
+    }
+    h1 {
+      font-family: 'Georgia', serif;
+      font-size: 4rem;        /* Larger header */
+      font-weight: 400;       
+      margin: 0 0 1.5rem 0;
+      line-height: 1.1;
+    }
+    .subtitle {
+      font-size: 1.5rem;      /* Larger subtitle */
+      margin-bottom: 3rem;
+      color: #ccc;
+      max-width: 36rem;
+    }
+    .cta-btn {
+      background: #5A8CA8; /* Muted blue */
+      color: #fff;
+      border: none;
+      border-radius: 2em;
+      padding: 1.1em 2.8em;   /* Slightly bigger */
+      font-size: 1.4rem;      /* Slightly bigger */
+      font-family: inherit;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-top: 1.5rem;     /* Slightly more margin */
+      text-decoration: none;
+      display: inline-block;
+    }
+    .cta-btn:hover {
+      background: #466b80; /* Slightly darker muted blue */
+    }
+    .right {
+      flex: 1;
+      background-image: url('images/charitywaterfinal.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100vh;
+      position: relative;
+    }
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+      .left, .right {
+        flex: none;
+        width: 100vw;
+        min-height: 50vh;
+      }
+      .left {
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="logo">
+        <img src="images/charitywater_logo_horizontal_WhiteText.png" alt="Charity: Water Logo" style="height: 40px;">
+      </div>
+      <h1>Water can change lives.<br>You can too.</h1>
+      <div class="subtitle">
+        100% of profits go towards providing clean water, with results made tangible through GPS coordinates and photographs.
+      </div>
+      <a href="#" class="cta-btn">START NOW</a>
+    </div>
+    <div class="right">
+      <!-- Placeholder image, replace with your own -->
+    </div>
+  </div>
+</body>
+</html>
